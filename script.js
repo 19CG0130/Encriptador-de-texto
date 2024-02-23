@@ -9,14 +9,6 @@ const matriz_code = [
     ["u", "ufat"],
 ];
 
-const matriz_descode = [
-    ["enter", "e"],
-    ["imes", "i"],
-    ["ai","a"],
-    ["ober", "o"],
-    ["ufat", "u"],
-];
-
 function btnEncriptar(){
     const texto = encriptar(campo_texto.value);
     campo_mensaje.value = texto;
@@ -40,11 +32,11 @@ function encriptar(fraseEncriptada){
 }
 
 function desencriptar(fraseDesencriptada){
-    for (let i = 0; i < matriz_descode.length; i++) {
-        if (fraseDesencriptada.includes(matriz_descode[i][0])){
+    for (let i = 0; i < matriz_code.length; i++) {
+        if (fraseDesencriptada.includes(matriz_code[i][1])){
             fraseDesencriptada = fraseDesencriptada.replaceAll(
-                matriz_descode[i][0],
-                matriz_descode[i][1]
+                matriz_code[i][1],
+                matriz_code[i][0]
             )
         }
     }
