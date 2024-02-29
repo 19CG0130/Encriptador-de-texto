@@ -2,3 +2,17 @@
     border: red solid;
     size: 1px;
 }
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+}
+.contenido-texto {
+    display: flex;
+    flex-direction: column;
+}

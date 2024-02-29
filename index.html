@@ -7,19 +7,26 @@
     <title>Encriptador de texto</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo de Alura">
+    </header>
     <main class="main">
         <section>
-            <textarea id="texto-encriptado" class="texto-encriptado" placeholder="Texto a Encriptar"></textarea>
-            <div class="btn">
-                <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
-                <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
-            </div>
-            <section class="campo-mensaje">
-                <textarea id="campo-mensaje" class="mensaje"></textarea>
+            <div class="contenido-texto">
+                <textarea id="texto-encriptado" class="texto-encriptado" placeholder="Texto a Encriptar"></textarea>
                 <div class="btn">
-                    <button class="btnCopiar" onclick="btnCopiar();">Copiar</button>
+                    <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
+                    <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
                 </div>
-            </section>
+            </div>
+            <div class="contenido-texto">
+                <section class="campo-mensaje">
+                    <textarea id="campo-mensaje" class="mensaje"></textarea>
+                    <div class="btn">
+                        <button class="btnCopiar" onclick="btnCopiar();">Copiar</button>
+                    </div>
+                </section>
+            </div>
         </section>
     </main>
     <script src="script.js"></script>
