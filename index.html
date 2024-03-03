@@ -10,24 +10,20 @@
     <header>
         <img class="logo" src="img/Logo.png" alt="Logo de Alura">
     </header>
-    <main class="main">
-        <section>
-            <div class="contenido-texto">
-                <textarea id="texto-encriptado" class="texto-encriptado" placeholder="Texto a Encriptar"></textarea>
-                <div class="btn">
-                    <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
-                    <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
-                </div>
+    <main>
+        <div class="contenido-texto">
+            <textarea id="texto-encriptado" class="texto-encriptado" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="btn">
+                <button class="btnEncriptar" onclick="btnEncriptar();">Encriptar</button>
+                <button class="btnDesencriptar" onclick="btnDesencriptar();">Desencriptar</button>
             </div>
-            <div class="contenido-texto">
-                <section class="campo-mensaje">
-                    <textarea id="campo-mensaje" class="mensaje"></textarea>
-                    <div class="btn">
-                        <button class="btnCopiar" onclick="btnCopiar();">Copiar</button>
-                    </div>
-                </section>
+        </div>
+        <div class="contenido-resultado">
+            <textarea id="campo-mensaje" class="mensaje" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <div class="btn">
+                <button class="btnCopiar" onclick="btnCopiar();">Copiar</button>
             </div>
-        </section>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>

@@ -42,3 +42,9 @@ function desencriptar(fraseDesencriptada){
     }
     return fraseDesencriptada;
 }
+
+function btnCopiar() {
+    let textarea = document.getElementById("campo-mensaje");
+    textarea.select();
+    document.execCommand("copy");
+}
